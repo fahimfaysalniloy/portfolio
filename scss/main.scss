@@ -14,6 +14,8 @@ body {
   line-height: 1.5;
 
 }
+//index page
+
 //Heading
 h1,
 h2,
@@ -46,6 +48,7 @@ header {
 main {
   padding: 4rem;
   min-height:calc(100vh - 60px);
+  //icons of social medias
   .icons{
     margin-top: 1rem ;
 
@@ -66,7 +69,7 @@ main {
     }
   }
 }
-
+//about page
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -112,7 +115,7 @@ main {
   grid-gap: .7rem;
   grid-template-columns: repeat(3,1fr);
 
-
+//showcase project image
   img {
     width: 100%;
     border: 3px rgb(19, 4, 4) solid;
@@ -127,7 +130,7 @@ main {
 }
 
 //contact page
-
+//container box
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +138,7 @@ main {
   align-items: center;
   margin-top: 1rem;
 
-
+//each box design
   div {
     font-size: 1rem;
     border: 3px #fff solid;
@@ -143,7 +146,7 @@ main {
     margin-bottom: 3rem;
     @include easeOut;
     width: 100%;
-
+//hover effect in contact box
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
@@ -159,7 +162,7 @@ main {
 
 }
 
-//button styles
+// showcase page button style global
 .btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -172,12 +175,14 @@ main {
   }
 
 }
+// extending btn style for dark button
 .btn-dark {
  @extend .btn;
  background: darken($primary-color, 50);
  color: #fff;
 
 }
+//extending btn style for light button
 .btn-light {
  @extend .btn;
  background: lighten($primary-color, 50);
@@ -186,7 +191,7 @@ main {
 
 
 
-
+// Footer design
 #main-footer {
   text-align: center;
   padding: 1rem;
